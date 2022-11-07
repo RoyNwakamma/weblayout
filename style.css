@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(6, 6, 88);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+}
+
+.logo {
+    width: 20%;
+    color: green;
+    font-weight: bold;
+    background-color: rgb(6, 6, 88);
+    border: none;
+    font-size: 1rem;
+}
+
+.selector {
+    width: 76%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+    font-size: 3rem;
+}
+
+.allnav,
+.dropdown {
+    font-size: 1rem;
+    background-color: rgb(6, 6, 88);
+    border: none;
+    color: white;
+}
+
+.about,
+.contact {
+    width: 40%;
+    gap: 3%;
+    display: flex;
+}
+
+.ab,
+.us,
+.con,
+.conus {
+    width: 90%;
+    font-size: 15px;
+}
+
+.image {
+    width: 4%;
+}
+
+img {
+    width: 50px;
+}
+
+.one {
+    grid-area: section1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 43%;
+}
+
+.two {
+    grid-area: section2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 9%;
+    padding: 8%;
+}
+
+.three {
+    grid-area: section3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+    padding: 3%;
+}
+
+.four {
+    grid-area: section4;
+    background-color: white;
+    padding: 8%;
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.five {
+    grid-area: section5;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    gap: 20%;
+}
+
+.main {
+    width: 100%;
+    height: 145vh;
+    display: grid;
+    background-color: grey;
+    gap: 2%;
+    grid-template-areas:
+        'section1 section1 section1 section2 section2 section3'
+        'section1 section1 section1 section2 section2 section3'
+        'section1 section1 section1 section2 section2 section3'
+        'section4 section4 section4 section2 section2 section3 '
+        'section4 section4 section4 section2 section2 section3'
+        'section4 section4 section4 section5 section5 section3'
+        'section4 section4 section4 section5 section5 section3'
+        'section4 section4 section4 section5 section5 section3'
+        'section4 section4 section4 section5 section5 section3';
+}
+
+.mind {
+    margin-left: 3%;
+}
+
+.post {
+    display: flex;
+    gap: 65%;
+    margin-left: 3%;
+}
+
+.post button {
+    background-color: blue;
+    padding: 2px;
+    border: none;
+}
+
+span {
+    font-size: 0.8rem;
+}
+
+.sec21 {
+    display: flex;
+    gap: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(40, 40, 194);
+}
+
+.eagle {
+    height: 40%;
+    background-image: url(images/millitary.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec3 {
+    display: flex;
+    gap: 7%;
+}
+
+.sec31 {
+    display: flex;
+    height: 150%;
+    flex-direction: column;
+    gap: 15%;
+}
+
+.sec31 button {
+    border-radius: 1rem;
+    background-color: blue;
+    padding: 0;
+    width: 50%;
+    color: aliceblue;
+}
+
+#more {
+    background-color: blue;
+    text-align: center;
+    height: 50%;
+    padding: 7%;
+    color: aliceblue;
+}
+
+.monthbk {
+    background-image: url(images/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70%;
+}
+
+.com {
+    font-size: 0.8rem;
+    color: blue;
+}
+
+.sec41 {
+    display: flex;
+    gap: 23%;
+}
+
+.sec51 {
+    display: flex;
+    gap: 5%;
+}
+
+@media screen and (max-width:425px) {
+    header {
+        background-color: rgb(6, 6, 88);
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20%;
+    }
+
+    .logo {
+        width: 20%;
+        color: green;
+        font-weight: bold;
+        background-color: rgb(6, 6, 88);
+        border: none;
+        font-size: 1rem;
+    }
+
+    .image {
+        width: 4%
+    }
+
+    .main {
+        width: 100%;
+        height: 145vh;
+        display: grid;
+        gap: 5%;
+        grid-template-areas: 
+        'section1 section1 section1'
+        'section2 section2 section2'
+        'section3 section3 section3'
+        'section4 section4 section4'
+        'section5 section5 section5';
+    }
+}
